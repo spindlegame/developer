@@ -1,0 +1,154 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-success"><i class="glyphicon glyphicon-print"></i></button>
+		<button type="submit" id="back" title="<%%TRANSLATION(Back)%%>" class="btn btn-warning"><i class="glyphicon glyphicon-remove"></i></button>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Storyline no.</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Story</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="story<%%RND1%%>"><%%COMBOTEXT(story)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Act/Chapter</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(story_act)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Storyweaving scene no.</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="storyweaving_scene_no<%%RND1%%>"><%%COMBOTEXT(storyweaving_scene_no)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Storyweaving scene</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="storyweaving_scene<%%RND1%%>"></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sequence</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="storyweaving_sequence<%%RND1%%>"></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Theme</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="storyweaving_theme<%%RND1%%>"></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Role</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="role<%%RND1%%>"><%%COMBOTEXT(role)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Character</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="character<%%RND1%%>"><%%COMBOTEXT(character)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Encounter</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="characterevent_scene<%%RND1%%>"><%%COMBOTEXT(characterevent_scene)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Character scene</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="character_event<%%RND1%%>"></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Scene no.</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(storyline_no)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Storyline</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(storyline)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Story appreciation</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(story_appreciation)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Story appreciation value</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(story_appreciation_value)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Effect character</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(effect_character)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Effect plot</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(effect_plot)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Effect theme</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(effect_theme)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Storydynamic </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(storydynamic_point)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Storydynamic value</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(storydynamic_value)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Author note</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(author_note)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Director note</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(director_note)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Editor note</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(editor_note)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>

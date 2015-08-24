@@ -1,0 +1,9 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'storyboard_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="storyboard-scene-<%%VALUE(id)%%>" class="storyboard-scene "><%%SELECT%%><%%VALUE(scene)%%><%%ENDSELECT%%></td>
+		<td id="storyboard-shot-<%%VALUE(id)%%>" class="storyboard-shot "><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(shot)%%>" rel="lightbox"><img src="thumbnail.php?i=<%%VALUE(shot)%%>&t=storyboard&f=shot&v=tv" class="img-thumbnail"></a></td>

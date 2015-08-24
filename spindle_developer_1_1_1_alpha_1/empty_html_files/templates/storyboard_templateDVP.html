@@ -1,0 +1,38 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-success"><i class="glyphicon glyphicon-print"></i></button>
+		<button type="submit" id="back" title="<%%TRANSLATION(Back)%%>" class="btn btn-warning"><i class="glyphicon glyphicon-remove"></i></button>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Scene</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="scene<%%RND1%%>"><%%COMBOTEXT(scene)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Shot</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var shotSrc1<%%RND1%%>='<%%TRANSLATION(ImageFolder)%%><%%VALUE(shot)%%>';
+				var shotSrc2<%%RND1%%>='thumbnail.php?t=storyboard&f=shot&i=<%%VALUE(shot)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('shotImg<%%RND1%%>').src=($('shotImg<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && shotSrc1<%%RND1%%> != '<%%TRANSLATION(ImageFolder)%%>' ? shotSrc1<%%RND1%%> : shotSrc2<%%RND1%%>); return false;"><img id="shotImg<%%RND1%%>" src="thumbnail.php?t=storyboard&f=shot&i=<%%VALUE(shot)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+	</fieldset>
+</div>

@@ -1,0 +1,195 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<a name="detail-view"></a>
+<div class="panel-heading"><h3 class="panel-title"><strong><%%DETAIL_VIEW_TITLE%%></strong></h3></div>
+
+<div class="panel-body" id="storypoints_static_dv_container">
+	<!-- child links -->
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<!-- form inputs -->
+		<div class="col-md-8 col-lg-10" id="storypoints_static_dv_form">
+			<fieldset class="form-horizontal">
+
+				<div class="form-group">
+					<label for="id" class="control-label col-lg-3">id <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#id-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="id-description"><div class="alert alert-info">This table referes to the static storypoints definded by Dramatica theory.<br>Chose the free Dramatica worksheets or the commercial Dramatica Pro software to encode them.<br><br>You should have 4 entrances per story, one for each throughline.</div></span>
+
+						<div class="form-control-static" id="id"><%%VALUE(id)%%></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="story" class="control-label col-lg-3">Story</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(story)%%><%%PLINK(story)%%><%%ADDNEW(story)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="throughline" class="control-label col-lg-3">Throughline</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(throughline)%%><%%PLINK(throughline)%%><%%ADDNEW(class_dramatica_throughline)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="throughline_domain" class="control-label col-lg-3">Domain</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(throughline_domain)%%><%%PLINK(throughline_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="concern" class="control-label col-lg-3">Concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(concern)%%><%%PLINK(concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="issue" class="control-label col-lg-3">Issue</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(issue)%%><%%PLINK(issue)%%><%%ADDNEW(class_dramatica_issue)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="problem" class="control-label col-lg-3">Problem</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(problem)%%><%%PLINK(problem)%%><%%ADDNEW(class_dramatica_themes)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="solution" class="control-label col-lg-3">Solution</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(solution)%%><%%PLINK(solution)%%><%%ADDNEW(class_dramatica_themes)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="symptom" class="control-label col-lg-3">Symptom</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(symptom)%%><%%PLINK(symptom)%%><%%ADDNEW(class_dramatica_themes)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="response" class="control-label col-lg-3">Response</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(response)%%><%%PLINK(response)%%><%%ADDNEW(class_dramatica_themes)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="catalyst" class="control-label col-lg-3">Catalyst/ Approach <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#catalyst-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="catalyst-description"><div class="alert alert-info">This point is called Catalyst for OST and MC Throughline.<br>It is called Approach in the RST and IC throughline.</div></span>
+
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(catalyst)%%><%%PLINK(catalyst)%%><%%ADDNEW(class_dramatica_issue)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="inhibitor" class="control-label col-lg-3">Inhibitor/ Delay <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#inhibitor-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="inhibitor-description"><div class="alert alert-info">This point is called Inhipitor for OST and MC Throughline.<br>It is called Delay in the RST and IC throughline.e RST and IC throughline.</div></span>
+
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(inhibitor)%%><%%PLINK(inhibitor)%%><%%ADDNEW(class_dramatica_issue)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="benchmark" class="control-label col-lg-3">Benchmark</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(benchmark)%%><%%PLINK(benchmark)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+			</fieldset>
+		</div>
+
+		<!-- DV action buttons -->
+		<div class="col-md-4 col-lg-2" id="storypoints_static_dv_action_buttons">
+			<div class="btn-toolbar">
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%UPDATE_BUTTON%%>
+				</div><p></p>
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%DESELECT_BUTTON%%>
+					<%%DVPRINT_BUTTON%%>
+					<%%DELETE_BUTTON%%>
+				</div><p></p>
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%INSERT_BUTTON%%>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div><!-- /div class="panel-body" -->
+	<script>
+		$j(function() {
+			var add_new_mode = (!$j('input[name=SelectedID]').val());
+			var embedded_mode = ($j('input[name=Embedded]').val() == 1);
+
+			$j('select, input[type=text], textarea').not(':disabled').eq(0).focus();
+			$j('form').eq(0).change(function(){
+				if($j(this).data('already_changed')) return;
+				if($j('#deselect').length) $j('#deselect').removeClass('btn-default').addClass('btn-warning').get(0).lastChild.data = " <%%TRANSLATION(Cancel)%%>";
+				$j(this).data('already_changed', true);
+			});
+
+			$j('a[href="<%%TRANSLATION(ImageFolder)%%>"]').click(function(){ return false; });
+
+
+			if(!embedded_mode){
+				/* add a horizontal spacer to [add new parent] buttons that don't have a spacered element before them */
+				$j('.add_new_parent').prev(':not(.hspacer-lg)').next().addClass('hspacer-lg');
+
+				$j('.add_new_parent').click(function(){
+					var pt = $j(this).attr('id').replace(/_add_new$/, '');
+					modal_window({
+						url: pt + '_view.php?addNew_x=1&Embedded=1',
+						close: function(){
+							var field_id = $j('#' + pt + '_add_new').prevAll('input:hidden').eq(0).attr('id');
+							$j('#' + field_id + '-container').select2('focus').select2('focus');
+						},
+						size: 'full',
+						title: $j(this).attr('title')
+					});
+				});
+			}
+
+			$j('form').on('click', '.view_parent', function(){
+				var pt = $j(this).attr('id').replace(/_view_parent$/, '');
+				var parent_id = $j(this).prevAll('input:hidden').eq(0).val();
+
+				/* handle radio lookups */
+				if($j(this).prevAll('[type=radio]').length){
+					parent_id = $j(this).prevAll('[type=radio]').eq(0).val();
+				}
+
+				if(parent_id != '{empty_value}'){
+					modal_window({
+						url: pt + '_view.php?Embedded=1&SelectedID=' + encodeURIComponent(parent_id),
+						close: function(){
+							var field_id = $j('#' + pt + '_view_parent').prevAll('input:hidden').eq(0).attr('id');
+							$j('#' + field_id + '-container').select2('focus').select2('focus');
+						},
+						size: 'full',
+						title: $j(this).attr('title')
+					});
+				}
+			});
+		});
+	</script>

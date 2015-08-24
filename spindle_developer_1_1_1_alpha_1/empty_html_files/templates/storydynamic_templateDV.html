@@ -1,0 +1,327 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<a name="detail-view"></a>
+<div class="panel-heading"><h3 class="panel-title"><strong><%%DETAIL_VIEW_TITLE%%></strong></h3></div>
+
+<div class="panel-body" id="storydynamic_dv_container">
+	<!-- child links -->
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<!-- form inputs -->
+		<div class="col-md-8 col-lg-10" id="storydynamic_dv_form">
+			<fieldset class="form-horizontal">
+
+				<div class="form-group">
+					<label for="id" class="control-label col-lg-3">id <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#id-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="id-description"><div class="alert alert-info">This table referes to the dynamic storypoints definded by Dramatica theory.<br>Chose the free Dramatica worksheets or the commercial Dramatica Pro software to encode them.<br><br>You should have 1 entrance per story.</div></span>
+
+						<div class="form-control-static" id="id"><%%VALUE(id)%%></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="story" class="control-label col-lg-3">Story</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(story)%%><%%PLINK(story)%%><%%ADDNEW(story)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="MC_resolve" class="control-label col-lg-3">MC resolve</label>
+					<div class="col-lg-9">
+						<%%COMBO(MC_resolve)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="MC_growth" class="control-label col-lg-3">MC growth</label>
+					<div class="col-lg-9">
+						<%%COMBO(MC_growth)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="MC_approach" class="control-label col-lg-3">MC approach <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#MC_approach-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="MC_approach-description"><div class="alert alert-info">Change character: alternates approach<br>Steadfast character: has a constant approach<br>---<br>In the back story (for a Change Main Character**) or at the beginning of the story (for a Steadfast Man Character**), there comes a point where the Main Character must choose a path to take because of some PERSONAL inequity or imbalance introduced by an event of some sort.</div></span>
+
+						<%%COMBO(MC_approach)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="MC_PS_style" class="control-label col-lg-3">MC PS style</label>
+					<div class="col-lg-9">
+						<%%COMBO(MC_PS_style)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="IC_resolve" class="control-label col-lg-3">IC resolve</label>
+					<div class="col-lg-9">
+						<%%COMBO(IC_resolve)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_driver" class="control-label col-lg-3">Overall driver</label>
+					<div class="col-lg-9">
+						<%%COMBO(OS_driver)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_limit" class="control-label col-lg-3">Overal limit</label>
+					<div class="col-lg-9">
+						<%%COMBO(OS_limit)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_outcome" class="control-label col-lg-3">Overall outcome</label>
+					<div class="col-lg-9">
+						<%%COMBO(OS_outcome)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_judgement" class="control-label col-lg-3">Overall judgement</label>
+					<div class="col-lg-9">
+						<%%COMBO(OS_judgement)%%>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_goal_domain" class="control-label col-lg-3">Overall goal</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_goal_domain)%%><%%PLINK(OS_goal_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_goal_concern" class="control-label col-lg-3">Goal concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_goal_concern)%%><%%PLINK(OS_goal_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_consequence_domain" class="control-label col-lg-3">Overall consequence</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_consequence_domain)%%><%%PLINK(OS_consequence_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_consequence_concern" class="control-label col-lg-3">Consequence concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_consequence_concern)%%><%%PLINK(OS_consequence_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_cost_domain" class="control-label col-lg-3">Overall cost</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_cost_domain)%%><%%PLINK(OS_cost_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_cost_concern" class="control-label col-lg-3">Cost concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_cost_concern)%%><%%PLINK(OS_cost_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_dividend_domain" class="control-label col-lg-3">Overall dividend</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_dividend_domain)%%><%%PLINK(OS_dividend_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_dividend_concern" class="control-label col-lg-3">Dividend concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_dividend_concern)%%><%%PLINK(OS_dividend_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_requirements_domain" class="control-label col-lg-3">Overall requirements</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_requirements_domain)%%><%%PLINK(OS_requirements_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_requirements_concern" class="control-label col-lg-3">Requirements concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_requirements_concern)%%><%%PLINK(OS_requirements_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_prerequesites_domain" class="control-label col-lg-3">Overall prerequesites</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_prerequesites_domain)%%><%%PLINK(OS_prerequesites_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_prerequesites_concern" class="control-label col-lg-3">Prerequesites concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_prerequesites_concern)%%><%%PLINK(OS_prerequesites_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_preconditions_domain" class="control-label col-lg-3">Overall preconditions</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_preconditions_domain)%%><%%PLINK(OS_preconditions_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_preconditions_concern" class="control-label col-lg-3">Preconditions concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_preconditions_concern)%%><%%PLINK(OS_preconditions_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_forewarnings_domain" class="control-label col-lg-3">Overall forewarnings</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_forewarnings_domain)%%><%%PLINK(OS_forewarnings_domain)%%><%%ADDNEW(class_dramatica_domain)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="OS_forewarnings_concern" class="control-label col-lg-3">Forewarnings concern</label>
+					<div class="col-lg-9">
+						<div class="row form-control-static"><div class="col-xs-11"><%%COMBO(OS_forewarnings_concern)%%><%%PLINK(OS_forewarnings_concern)%%><%%ADDNEW(class_dramatica_concern)%%></div></div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="analyse_essence" class="control-label col-lg-3">Adience appreciation - Essence <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#analyse_essence-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="analyse_essence-description"><div class="alert alert-info">IF <br>([MC growth]='start' AND [OS_resolve]='good') <br>OR<br>([MC growth]='stop' AND [OS_resolve])='bad')<br>THEN<br>[analyse_essense]=='positive'<br>ELSE<br>=='negative' </div></span>
+
+						<input maxlength="255" type="text" class="form-control" name="analyse_essence" id="analyse_essence" value="<%%VALUE(analyse_essence)%%>">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="analyse_nature" class="control-label col-lg-3">Adience appreciation - Nature <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#analyse_nature-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="analyse_nature-description"><div class="alert alert-info">IF MC resolve AND OS outcome --><br>change+success= actual dilemma<br>change+failure=apparent dilemma<br>steadfast+success=actual work<br>steadfast+failure=apparent work</div></span>
+
+						<input maxlength="40" type="text" class="form-control" name="analyse_nature" id="analyse_nature" value="<%%VALUE(analyse_nature)%%>">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="analyse_tendency" class="control-label col-lg-3">Adience appreciation - Tendency <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#analyse_tendency-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="analyse_tendency-description"><div class="alert alert-info">IF MC approach + OST domain<br>do-er+action OR be-er+ decision=willing<br>doer+decision OR be-er+action=unwilling</div></span>
+
+						<input maxlength="40" type="text" class="form-control" name="analyse_tendency" id="analyse_tendency" value="<%%VALUE(analyse_tendency)%%>">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="analyse_reach" class="control-label col-lg-3">Adience appreciation - Reach <button class="btn btn-info btn-xs vspacer-sm" type="button" data-toggle="collapse" tabindex="-1" data-target="#analyse_reach-description"><i class="glyphicon glyphicon-info-sign"></i></button></label>
+					<div class="col-lg-9">
+						<span class="help-block collapse" id="analyse_reach-description"><div class="alert alert-info">OPTIONLOCK + LINEAR&#160;= BOTH AUDIENCES<br>OPTIONLOCK + HOLISTIC&#160;= FEMALE AUDIENCES<br>TIMELOCK + LINEAR&#160;= MALE AUDIENCES<br>TIMELOCK + HOLISTIC&#160;= NEITHER AUDIENCE</div></span>
+
+						<input maxlength="40" type="text" class="form-control" name="analyse_reach" id="analyse_reach" value="<%%VALUE(analyse_reach)%%>">
+					</div>
+				</div>
+
+			</fieldset>
+		</div>
+
+		<!-- DV action buttons -->
+		<div class="col-md-4 col-lg-2" id="storydynamic_dv_action_buttons">
+			<div class="btn-toolbar">
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%UPDATE_BUTTON%%>
+				</div><p></p>
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%DESELECT_BUTTON%%>
+					<%%DVPRINT_BUTTON%%>
+					<%%DELETE_BUTTON%%>
+				</div><p></p>
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%INSERT_BUTTON%%>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div><!-- /div class="panel-body" -->
+	<script>
+		$j(function() {
+			var add_new_mode = (!$j('input[name=SelectedID]').val());
+			var embedded_mode = ($j('input[name=Embedded]').val() == 1);
+
+			$j('select, input[type=text], textarea').not(':disabled').eq(0).focus();
+			$j('form').eq(0).change(function(){
+				if($j(this).data('already_changed')) return;
+				if($j('#deselect').length) $j('#deselect').removeClass('btn-default').addClass('btn-warning').get(0).lastChild.data = " <%%TRANSLATION(Cancel)%%>";
+				$j(this).data('already_changed', true);
+			});
+
+			$j('a[href="<%%TRANSLATION(ImageFolder)%%>"]').click(function(){ return false; });
+
+
+			if(!embedded_mode){
+				/* add a horizontal spacer to [add new parent] buttons that don't have a spacered element before them */
+				$j('.add_new_parent').prev(':not(.hspacer-lg)').next().addClass('hspacer-lg');
+
+				$j('.add_new_parent').click(function(){
+					var pt = $j(this).attr('id').replace(/_add_new$/, '');
+					modal_window({
+						url: pt + '_view.php?addNew_x=1&Embedded=1',
+						close: function(){
+							var field_id = $j('#' + pt + '_add_new').prevAll('input:hidden').eq(0).attr('id');
+							$j('#' + field_id + '-container').select2('focus').select2('focus');
+						},
+						size: 'full',
+						title: $j(this).attr('title')
+					});
+				});
+			}
+
+			$j('form').on('click', '.view_parent', function(){
+				var pt = $j(this).attr('id').replace(/_view_parent$/, '');
+				var parent_id = $j(this).prevAll('input:hidden').eq(0).val();
+
+				/* handle radio lookups */
+				if($j(this).prevAll('[type=radio]').length){
+					parent_id = $j(this).prevAll('[type=radio]').eq(0).val();
+				}
+
+				if(parent_id != '{empty_value}'){
+					modal_window({
+						url: pt + '_view.php?Embedded=1&SelectedID=' + encodeURIComponent(parent_id),
+						close: function(){
+							var field_id = $j('#' + pt + '_view_parent').prevAll('input:hidden').eq(0).attr('id');
+							$j('#' + field_id + '-container').select2('focus').select2('focus');
+						},
+						size: 'full',
+						title: $j(this).attr('title')
+					});
+				}
+			});
+		});
+	</script>

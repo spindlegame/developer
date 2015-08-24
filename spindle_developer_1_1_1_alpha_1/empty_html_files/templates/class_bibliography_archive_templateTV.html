@@ -1,0 +1,18 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'class_bibliography_archive_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="class_bibliography_archive-organization_abr-<%%VALUE(id)%%>" class="class_bibliography_archive-organization_abr "><%%SELECT%%><%%VALUE(organization_abr)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-organization-<%%VALUE(id)%%>" class="class_bibliography_archive-organization "><%%SELECT%%><%%VALUE(organization)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-address_street-<%%VALUE(id)%%>" class="class_bibliography_archive-address_street "><%%SELECT%%><%%VALUE(address_street)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-address_place-<%%VALUE(id)%%>" class="class_bibliography_archive-address_place "><%%SELECT%%><%%VALUE(address_place)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-address_pc-<%%VALUE(id)%%>" class="class_bibliography_archive-address_pc "><%%SELECT%%><%%VALUE(address_pc)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-address_region-<%%VALUE(id)%%>" class="class_bibliography_archive-address_region "><%%SELECT%%><%%VALUE(address_region)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-address_country-<%%VALUE(id)%%>" class="class_bibliography_archive-address_country "><%%SELECT%%><%%VALUE(address_country)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-phone1-<%%VALUE(id)%%>" class="class_bibliography_archive-phone1 "><%%SELECT%%><%%VALUE(phone1)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-email1-<%%VALUE(id)%%>" class="class_bibliography_archive-email1 "><%%SELECT%%><%%VALUE(email1)%%><%%ENDSELECT%%></td>
+		<td id="class_bibliography_archive-web1-<%%VALUE(id)%%>" class="class_bibliography_archive-web1 "><a href="link.php?t=class_bibliography_archive&f=web1&i=<%%VALUE(id)%%>" target="_blank"><%%VALUE(web1)%%></a></td>
+		<script>jQuery(function(){ var e_web1='<%%VALUE(web1)%%>'; if(e_web1=='' || e_web1=='&nbsp;') jQuery('#class_bibliography_archive-web1-<%%VALUE(id)%%>').html(''); });</script>

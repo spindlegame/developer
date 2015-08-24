@@ -1,0 +1,94 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-success"><i class="glyphicon glyphicon-print"></i></button>
+		<button type="submit" id="back" title="<%%TRANSLATION(Back)%%>" class="btn btn-warning"><i class="glyphicon glyphicon-remove"></i></button>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">id</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Story</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="story<%%RND1%%>"><%%COMBOTEXT(story)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Throughline</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="throughline<%%RND1%%>"><%%COMBOTEXT(throughline)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Domain</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="throughline_domain<%%RND1%%>"><%%COMBOTEXT(throughline_domain)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Concern</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="concern<%%RND1%%>"><%%COMBOTEXT(concern)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Issue</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="issue<%%RND1%%>"><%%COMBOTEXT(issue)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Problem</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="problem<%%RND1%%>"><%%COMBOTEXT(problem)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Solution</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="solution<%%RND1%%>"><%%COMBOTEXT(solution)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Symptom</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="symptom<%%RND1%%>"><%%COMBOTEXT(symptom)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Response</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="response<%%RND1%%>"><%%COMBOTEXT(response)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Catalyst/ Approach</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="catalyst<%%RND1%%>"><%%COMBOTEXT(catalyst)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Inhibitor/ Delay</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="inhibitor<%%RND1%%>"><%%COMBOTEXT(inhibitor)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Benchmark</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="benchmark<%%RND1%%>"><%%COMBOTEXT(benchmark)%%></span></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
